@@ -23,14 +23,20 @@ class MyPageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Column(
-
-          children: [
-            SizedBox(height: 30,),
-            Text("Review", style: TextStyle(fontSize: 40, fontFamily: "Oswald",fontWeight: FontWeight.bold)),
-            Text("Flutter App"),
-          ],
+      body: SafeArea(
+        child: Center(
+          child: Column(
+        
+            children: [
+              SizedBox(height: 30),
+              CircleAvatar(
+                radius: 90,
+                foregroundImage: AssetImage('images/fix.jpg'),
+              ),
+              Text("Review", style: TextStyle(fontSize: 40, fontFamily: "Oswald",fontWeight: FontWeight.bold)),
+              Text("Flutter App"),
+            ],
+          ),
         ),
       )
     );
