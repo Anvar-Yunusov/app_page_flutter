@@ -62,36 +62,33 @@ class MyPageScreen extends StatelessWidget {
 
               SizedBox(height: 20),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
 
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 30.0),
+                  children: [
+                    Expanded(
                       child: Column(
                         children: [
-                          Text('bird breed'),
-                          Text('not a heron')
+                          Text('bird breed', textAlign: TextAlign.center, style: kRegularBoldTextStyle,),
+                          Text('not a heron', textAlign: TextAlign.center, style: kRegularTextStyle,)
                         ],
-                    
+
                                       ),
                     ),
-                  ),
-                  
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsets.only(right: 30.0),
+
+                    Expanded(
                       child: Column(
                         children: [
-                          Text('animal'),
-                          Text('bird')
+                          Text('animal', textAlign: TextAlign.center, style: kRegularBoldTextStyle,),
+                          Text('bird', textAlign: TextAlign.center, style: kRegularTextStyle,)
                         ],
                       ),
                     ),
-                  ),
-              ],
+                ],
+                ),
               )
 
             ],
