@@ -1,5 +1,7 @@
 import 'package:app_flutter_page/constants.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,6 +49,51 @@ class MyPageScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 25),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(Icons.email),
+                    title: Text("email@mail.ru", style: kBizTextStyle,),
+                  ),
+                ),
+              ),
+
+              SizedBox(height: 20),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 30.0),
+                      child: Column(
+                        children: [
+                          Text('bird breed'),
+                          Text('not a heron')
+                        ],
+                    
+                                      ),
+                    ),
+                  ),
+                  
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(right: 30.0),
+                      child: Column(
+                        children: [
+                          Text('animal'),
+                          Text('bird')
+                        ],
+                      ),
+                    ),
+                  ),
+              ],
+              )
+
             ],
           ),
         ),
