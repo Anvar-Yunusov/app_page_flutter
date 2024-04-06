@@ -1,3 +1,4 @@
+import 'package:app_flutter_page/constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -35,6 +36,17 @@ class MyPageScreen extends StatelessWidget {
               ),
               Text("Review", style: TextStyle(fontSize: 40, fontFamily: "Oswald",fontWeight: FontWeight.bold)),
               Text("Flutter App"),
+              SizedBox(height: 15,),
+
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 25),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(Icons.call),
+                    title: Text("+79500000000", style: kBizTextStyle,),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
